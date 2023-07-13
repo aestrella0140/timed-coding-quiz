@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed coding quiz</title>
     <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
 </head>
 
+
 <body>
+<div>timer; <span class="next">60</span></div>
+<!-- <button id="start-button">start</button> -->
+
     <div class="container">
-        Q1. Which element is not semantic? <br>
+        Q1. Which element is not semantic? <hr>
         <input type="radio" name="question1">aside <br>
         <input type="radio" name="question1" id="correct1">div <br>
         <input type="radio" name="question1">footer <br>
         <input type="radio" name="question1">h1 <br>
-        <button class="next" onclick="next(1)">NEXT</button>
+        <button class="next" onclick="next(1)">START</button>
     </div>
 
     <div class="container">
-        Q2. What do color selectors do in CSS? <br>
+        Q2. What do color selectors do in CSS? <hr>
         <input type="radio" name="question2">make color selector for multiple use. <br>
         <input type="radio" name="question2">select certain elements in HTML to style. <br>
         <input type="radio" name="question2">select color from RGB wheel. <br>
@@ -29,7 +32,7 @@
     </div>
 
     <div class="container">
-        Q3. how to link your github repo to your local repo? <br>
+        Q3. how to link your github repo to your local repo? <hr>
         <input type="radio" name="question3">clone HTTPS key <br>
         <input type="radio" name="question3">clone GITHUB CLI <br>
         <input type="radio" name="question3" id="correct3">clone SSH key <br>
@@ -38,7 +41,7 @@
     </div>
 
     <div class="container">
-        Q4. what symbol do we use to end a line of code in Javascript? <br>
+        Q4. what symbol do we use to end a line of code in Javascript? <hr>
         <input type="radio" name="question4">{ <br>
         <input type="radio" name="question4">: <br>
         <input type="radio" name="question4">/ <br>
@@ -47,7 +50,7 @@
      </div>
 
     <div class="container">
-        Q5. what does web API stand for? <br>
+        Q5. what does web API stand for? <hr>
         <input type="radio" name="question5" id="correct5">web application programming interface <br>
         <input type="radio" name="question5">web association programming interface <br>
         <input type="radio" name="question5">web application pilot interface <br>
@@ -56,14 +59,15 @@
     </div>
 
     <div class="container">
-        Q6. what can an array contian? <br>
+        Q6. what can an array contian? <hr>
         <input type="radio" name="question6">numbers <br>
         <input type="radio" name="question6">words <br>
         <input type="radio" name="question6">letters <br>
         <input type="radio" name="question6" id="correct6">all of the above <br>
         <button onclick="result()">SUBMIT QUIZ</button>
     </div>
-
+<script src="assets/script.js"></script>
 </body>
+
 
 </html>
